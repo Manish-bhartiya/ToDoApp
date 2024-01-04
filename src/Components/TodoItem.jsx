@@ -46,7 +46,7 @@ export default function TodoItem({ todo }) {
           } else setIsEditable((prev) => !prev);
         }}
         disabled={todo.completed}
-        className="bg-green-500 text-white p-2 ml-2 rounded-2xl"
+        className="bg-green-500 text-white p-2 ml-2 rounded-2xl overflow-hidden"
       >
         {isEditable ? '📁' : '✏️'}
       </button>
